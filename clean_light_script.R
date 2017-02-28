@@ -80,7 +80,7 @@ for(i in 1:length(dataset)){  #for each logger in the dataset
  sumary$parMean <- mean(dataset[[i]]$newpar) #mean PAR
  sumary$parMedian <- median(dataset[[i]]$newpar) #median PAR
  
- 
+
 
  ####THIS IS TO MAKE  THE AVERAGE OF PAR OF A DEFINED PERIOD OF THE DAY, IT OUTPUTS A DAILY VALUE
   x <- as.xts(dataset[[i]]$paar, dataset[[i]]$date.time) #construct an xts object with the variable we want
