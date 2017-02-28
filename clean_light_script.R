@@ -52,8 +52,8 @@ Paroutliers <-function(data){
 ###  READING ALL FILES ###
 ### 
 ###  ADD YOUR FILE NAMES HERE AND THE FILE PATH BELOW 
-filelist <- c("L1_processed.csv","L2_B3_june.csv", "L1_B4_june.csv", "L2_B4_june.csv") #vector of files to read
-f <- file.path("C:/Users/gero0008/Box Sync/PhD/R/Lightdata", filelist) #create filepaths for each file
+filelist <- c("L1_processed.csv", "L1_B4_june.csv") #vector of files to read
+f <- file.path("C:/Users/R/Lightdata", filelist) #create filepaths for each file
 
 dataset <- lapply(f, readfiles) #read all the files and place them in a list
 names(dataset) <- gsub(".*/(.*)\\..*", "\\1", f)  #takes the names: searches for the last / and the "." and copys the text in it
